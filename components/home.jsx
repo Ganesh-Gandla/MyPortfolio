@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
 
                 <div id="introImg">
-                    <img src="components/ganesh.png" alt="ganesh gandla" width={'300px'} />
+                    <img src="/ganesh.png" alt="ganesh gandla" width={'300px'} />
                 </div>
             </div>
         </section>

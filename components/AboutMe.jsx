@@ -13,7 +13,7 @@ const AboutMe = () => {
             
 
                 <div id="myImg">
-                    <img src="/components/ganesh.png" alt="" width={"300px"}/>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/qC4D5dX/secure-Pass.jpg" alt="secure-Pass" border="0"></img></a>
                 </div>
                 <div id="AboutText">
                     <div id="AboutExEd">
