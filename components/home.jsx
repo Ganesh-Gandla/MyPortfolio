@@ -4,7 +4,7 @@ import './Home.css'
 const Home = () => {
     return (
         <section id="Home">
-            <div className="introContainer">
+            <div className="introContainer container">
                 <div id="introText">
                     <p>Hi... I'M...</p>
                     <h1>Ganesh Gandla</h1>
@@ -17,15 +17,15 @@ const Home = () => {
 
                     <div id="SociaBtn">
 
-                        <a href="https//www.github.com"><img src='../icons/github.svg' width={'30px'}></img></a>
-                        <a href="https//www.linkedin.com"><img src='../icons/linkedin.svg' width={'30px'}></img></a>
-                        <img src='../icons/email.png' width={'30px'} height={'32 px'}></img>
+                        <a href="https//www.github.com"><img src='./icons/github.svg' width={'30px'}></img></a>
+                        <a href="https//www.linkedin.com"><img src='./icons/linkedin.svg' width={'30px'}></img></a>
+                        <img src='./icons/email.png' width={'30px'} height={'32 px'}></img>
 
                     </div>
                 </div>
 
                 <div id="introImg">
-                    <img src="/ganesh.png" alt="ganesh gandla" width={'300px'} />
+                    <img src="./components/ganesh.png" alt="ganesh gandla" width={'300px'} />
                 </div>
             </div>
         </section>

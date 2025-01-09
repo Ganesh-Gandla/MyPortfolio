@@ -4,6 +4,45 @@
 }
 
 
+/* key frames */
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+  
+}
+
+@keyframes slideX {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes slideY {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -98,6 +137,8 @@ nav ul li a:hover {
 }
 
 #introImg img{
+  border: 1px solid maroon;
+  width: 25vw;
   border-radius: 50%;
   box-shadow: 2px 2px 50px black;
 }
@@ -121,13 +162,16 @@ nav ul li a:hover {
 }
 
 #AboutText{
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5vh;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 #AboutExEd{
@@ -135,12 +179,13 @@ nav ul li a:hover {
   /* background-color: gray; */
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 }
 
 #AboutExperience, #AboutEducation{
+  min-width: 150px;
   width: 40%;
-
+  height: 50%;
   border: 1px solid rgb(56, 56, 56);
   padding: 2rem 0;
   border-radius: 2rem;
@@ -148,7 +193,7 @@ nav ul li a:hover {
 }
 
 #Projects {
-  height: 90vh;
+  /* height: 90vh; */
   padding-top: 10vh;
   text-align: center;
 }
@@ -159,7 +204,7 @@ nav ul li a:hover {
 
 .ProjectsArr{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 5vw;
   /* overflow: auto; */
   padding: 2vw;
@@ -172,11 +217,26 @@ nav ul li a:hover {
   border: 1px solid black;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+}
+
+.ProjectSection:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .ProjectSection p{
-  font-size: x-small;
-  padding: 1vw;
+  font-size: 0.6rem;
+    color: #666;
+    text-align: center; /* Centered description */
+    margin-bottom: 20px;
+    line-height: 1;
+    padding: 0 10px;
 }
 
 .ProjectSection img{
@@ -186,10 +246,19 @@ nav ul li a:hover {
   margin: 1vw;
 }
 
+.ProjectSection h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Centered title */
+}
+
 /* .ProjectSection button{
   position:absolute;
   bottom: 40px;
 } */
+
+
 
 #Contact{
   text-align: center;
@@ -201,18 +270,113 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 2vh;
   /* align-content: center; */
-  height: 5vh;
-  width: 60vw;
+  height: max-content;
+  width: 70vw;
   border: 1px solid black;
   border-radius: 10px;
   margin: auto;
+  padding: 5px;
+  
 }
 
 .ContactDetails {
   display: flex;
   align-items: center;
   gap: 1vw;
+}
+
+/* animation */
+
+.slideX{
+  animation: slideX linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.slideY{
+  animation: slideY linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* utility class */
+
+.container {
+  border: 1px solid maroon;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  } 
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  } 
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  } 
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  } 
+
+  .introContainer{
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 5vh;
+  }
+
+  #AboutExEd{
+    /* flex-direction: column; */
+    gap: 5vh;
+  }
+
+  #projects{
+    height: fit-content;
+  }
+
+  .ProjectsArr{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ProjectSection{
+    min-width: 300px;
+  }
+
+  .ContactContainer{
+    flex-direction: column;
+    width: max-content;
+    
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  } 
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  } 
 }
 
 

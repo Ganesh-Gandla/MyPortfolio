@@ -4,16 +4,16 @@ const AboutMe = () => {
     return (
         <>
 
-        <div id="AboutSection">
+        <div id="AboutSection" className="container">
 
-            <p>Get To Know More</p>
-            <h1>About Me</h1>
+            <p className='slideX'>Get To Know More</p>
+            <h1 className='slideY'>About Me</h1>
 
             <div id="AboutContainer">
             
 
                 <div id="myImg">
-                <a href="https://imgbb.com/"><img src="https://i.ibb.co/qC4D5dX/secure-Pass.jpg" alt="secure-Pass" border="0"></img></a>
+                {/* <img src="./components/ganesh.png" alt="secure-Pass" width={'300px'}></img> */}
                 </div>
                 <div id="AboutText">
                     <div id="AboutExEd">
