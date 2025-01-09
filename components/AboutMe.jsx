@@ -19,19 +19,19 @@ const AboutMe = () => {
                     <div id="AboutExEd">
                         <div id="AboutExperience">
                             <p>Experience</p>
-                            <p>4+ years</p>
+                            <p>5+ years</p>
                             <p>Content moderator</p>
                         </div>
 
                         <div id="AboutEducation">
                             <p>Education</p>
                             <p>B.Tech</p>
-                            <p>Mechanicla Engineering</p>
+                            <p>Mechanical Engineering</p>
                         </div>
                     </div>
 
                     <div id="AboutDesc">
-                        <p>Naa gurunchi emaina rayali ikkada</p>
+                        <p>Naa gurunchi telusukovalsindhi inka vundhiiii</p>
                     </div>
                 </div>
             </div>
