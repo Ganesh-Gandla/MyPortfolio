@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectSection from './ProjectSection'
-import atmImage from 'banners/atm.jpg'
 
 function Projects() {
 
@@ -20,7 +19,7 @@ function Projects() {
   {
     // image: './banners/atm.jpg',4
 
-    image: {atmImage},
+    image: "banners/atm.jpg",
     title: 'ATM Simulator',
     description: 'This project simulates a basic automated teller machine (ATM) using Java core functionalities. It allows users to perform common banking transactions.',
     gitHubLink: "",
