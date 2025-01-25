@@ -19,7 +19,10 @@ function Projects() {
   {
     // image: './banners/atm.jpg',4
 
-    image: "banners/atm.jpg",
+    
+
+
+    image: "<a href='https://imgbb.com/'><img src='https://i.ibb.co/h2zpFCy/atm.jpg' alt='atm' border='0'></a>",
     title: 'ATM Simulator',
     description: 'This project simulates a basic automated teller machine (ATM) using Java core functionalities. It allows users to perform common banking transactions.',
     gitHubLink: "",
@@ -43,4 +46,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Projectsjpg
