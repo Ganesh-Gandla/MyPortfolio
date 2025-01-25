@@ -46,4 +46,4 @@ function Projects() {
   )
 }
 
-export default Projectsjpg
+export default Projects
