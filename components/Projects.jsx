@@ -4,13 +4,13 @@ import ProjectSection from './ProjectSection'
 function Projects() {
 
   const projects = [{
-    image: "./banners/securePass.jpg",
+    image: "https://i.ibb.co/F64cx8W/secure-Pass.jpg",
     title: 'SecurePass',
     description: 'Developed a web-baced password manager using React.js, Express.js and MonogoDB. Implemented features for generating, storing and managing complex passwords with a focus on data privacy and security. Used Git for version controle and GitHub for project collaboration.',
     gitHubLink: "",
     demoLink: ""
   }, {
-    image: "./banners/eCommerce.jpg",
+    image: "https://i.ibb.co/D8hVjFP/e-Commerce.webp",
     title: 'E-Commerce website',
     description: 'Developed a responsive front-end for e-commerce website using HTML, CSS and JavaScript for intractive elements, mimicking core functionalities of Amozon.',
     gitHubLink: "",
@@ -22,7 +22,7 @@ function Projects() {
     
 
 
-    image: "<a href='https://imgbb.com/'><img src='https://i.ibb.co/h2zpFCy/atm.jpg' alt='atm' border='0'></a>",
+    image: "https://i.ibb.co/h2zpFCy/atm.jpg",
     title: 'ATM Simulator',
     description: 'This project simulates a basic automated teller machine (ATM) using Java core functionalities. It allows users to perform common banking transactions.',
     gitHubLink: "",
