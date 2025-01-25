@@ -11,7 +11,7 @@ function Projects() {
     gitHubLink: "",
     demoLink: ""
   }, {
-    image: "./e-commerce-test.jpg",
+    image: "./banners/eCommerce.jpg",
     title: 'E-Commerce website',
     description: 'Developed a responsive front-end for e-commerce website using HTML, CSS and JavaScript for intractive elements, mimicking core functionalities of Amozon.',
     gitHubLink: "",
