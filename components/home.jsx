@@ -24,8 +24,20 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div id="introImg">
-                    <img src="./components/ganesh.png" alt="ganesh gandla" width={'300px'} />
+                
+
+                <div class="window">
+                    <div class="window-header">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="window-content">
+                        <p>I build full-stack applications with React.</p>
+                        <p>I specialized in Java Script for frontend and backend development.</p>
+                        <p>I use databases like MongoDb and MySQL.</p>
+                        <p>I maintain my code in GITHUB.</p>
+                    </div>
                 </div>
             </div>
         </section>

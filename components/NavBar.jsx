@@ -4,7 +4,6 @@ const NavBar = () => {
     return(
         <>
         <nav>
-            <h1>Ganesh Gandla</h1>
             <ul>
                 <li><a href="#Home"> Home</a></li>
                 <li><a href="#AboutSection"> about</a></li>

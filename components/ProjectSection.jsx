@@ -7,10 +7,10 @@ function ProjectSection({image, title, description}) {
                 <img src={image} alt="" />
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <div id='introBtn' className='ProjectBtn'>
+                {/* <div id='introBtn' className='ProjectBtn'>
                     <button>github</button>
                     <button>live demo</button>
-                </div>
+                </div> */}
             </div>
         </>
     )

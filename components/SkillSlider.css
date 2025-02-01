@@ -1,0 +1,71 @@
+/* Slider Container */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: transparent; /* Transparent Background */
+  }
+  
+  /* Slider Track */
+  .slider {
+    display: flex;
+    width: 200%;
+    animation: scroll 20s linear infinite; /* Slow and Smooth */
+  }
+  
+  /* Each Slide (Skill Logo) */
+  .slide {
+    min-width: 120px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.2)); /* Soft Glow */
+  }
+  
+  .slide p {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Animation for Infinite Scroll */
+  @keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Fading Effect */
+  .slider-container::before,
+  .slider-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 200px; /* Adjust fade width */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+  
+  /* Left Fade Effect */
+  .slider-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  /* Right Fade Effect */
+  .slider-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  
