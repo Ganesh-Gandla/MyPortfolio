@@ -2,16 +2,16 @@ import React from "react";
 import "./SkillSlider.css"; // Import CSS for animation
 
 // Import Skill Logos
-import htmlLogo from "./icons/email.png";
-import cssLogo from "./icons/email.png";
-import jsLogo from "./icons/email.png";
-import reactLogo from "./icons/email.png";
-import nodeLogo from "./icons/email.png";
-import mongoLogo from "./icons/email.png";
-import sqlLogo from "./icons/email.png";
-import javaLogo from "./icons/email.png";
-import gitLogo from "./icons/email.png";
-import githubLogo from "./icons/email.png";
+import htmlLogo from "/icons/email.png";
+import cssLogo from "/icons/email.png";
+import jsLogo from "/icons/email.png";
+import reactLogo from "/icons/email.png";
+import nodeLogo from "/icons/email.png";
+import mongoLogo from "/icons/email.png";
+import sqlLogo from "/icons/email.png";
+import javaLogo from "/icons/email.png";
+import gitLogo from "/icons/email.png";
+import githubLogo from "/icons/email.png";
 
 const skills = [
   { name: "HTML", img: htmlLogo },
