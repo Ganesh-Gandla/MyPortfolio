@@ -349,12 +349,18 @@ nav ul li a:hover {
   animation: slideX linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  width: max-content;
+  text-align: center;
+  margin: auto;
 }
 
 .slideY{
   animation: slideY linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  width: max-content;
+  text-align: center;
+  margin: auto;
 }
 
 /* utility class */
