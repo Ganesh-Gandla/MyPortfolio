@@ -3,7 +3,6 @@
   --Nav-Text-Color : #fff;
 }
 
-
 /* key frames */
 
 @keyframes appear {
@@ -14,8 +13,7 @@
   to{
     opacity: 1;
     scale: 1;
-  }
-  
+  }  
 }
 
 @keyframes slideX {
@@ -27,7 +25,6 @@
     opacity: 1;
     transform: translateX(0px);
   }
-  
 }
 
 @keyframes slideY {
@@ -39,10 +36,9 @@
     opacity: 1;
     transform: translateX(0px);
   }
-  
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap'); */
 
 *{
   margin: 0;
@@ -51,31 +47,34 @@
 
 body{
   font-family: Arial, sans-serif;
-  width: 100%;
+  width: 100vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  
-  /* background-color: #000000; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
   width: 25%;
+  min-width: max-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 10px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.2);
   /* background: linear-gradient(to bottom, #d3d3d3, #a9a9a9); */
   box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
   border-radius: 20px;
-  margin: 20px 37.5%;
-  
-
 }
 
 nav h1 {
@@ -91,9 +90,6 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul li {
-  /* margin: 0 15px; */
-}
 
 nav ul li a {
   text-decoration: none;
@@ -101,14 +97,14 @@ nav ul li a {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  /* transition: color 0.3s ease, background-color 0.3s ease; */
 }
 
 nav ul li a:hover {
   color: white; /* Highlight text */
   background-color: black; /* Add a hover background */
-  padding: 10px 10px;
-  border-radius: 20px;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 .introContainer{
@@ -148,12 +144,7 @@ nav ul li a:hover {
   gap: 2vw;
 }
 
-#introImg img{
-  /* border: 1px solid maroon; */
-  width: 15vw;
-  border-radius: 50%;
-  box-shadow: 2px 2px 50px black;
-}
+
 
 
 /* Window Container */
@@ -204,6 +195,7 @@ nav ul li a:hover {
 }
 
 #AboutContainer{
+  font-size: small;
   width: 100%;
   height: 80vh;
   display: flex;
@@ -213,9 +205,6 @@ nav ul li a:hover {
   /* gap: 2rem; */
 }
 
-#AboutDesc {
-
-}
 
 #AboutText{
   width: 100%;
@@ -230,8 +219,16 @@ nav ul li a:hover {
   animation-range: entry 0% cover 30%;
 }
 
+#introImg img{
+  /* border: 1px solid maroon; */
+  width: 15vw;
+  min-width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 50px black;
+}
+
 #AboutExEd{
-  width: 50%;
+  width: 100%;
   /* background-color: gray; */
   display: flex;
   justify-content: space-around;
@@ -249,7 +246,7 @@ nav ul li a:hover {
 }
 
 #Projects {
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 2vh;
   text-align: center;
 }
@@ -261,15 +258,17 @@ nav ul li a:hover {
 .ProjectsArr{
   margin: 10vh 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 5vw;
   /* overflow: auto; */
-  padding: 2vw;
-  position: relative;
+  padding: 1vw;
+  /* position: relative; */
+  min-width:max-content;
 }
 
 .ProjectSection{
   height: 50vh;
+  min-width: 200px;
   width: 20vw;
   border: 1px solid black;
   border-radius: 10px;
@@ -372,39 +371,54 @@ nav ul li a:hover {
 @media (max-width: 1536px) {
   .container {
     max-width: 1280px;
-  } 
+  }
 }
 
 @media (max-width: 1280px) {
   .container {
     max-width: 1024px;
-  } 
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
-  } 
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
-  } 
+  }
 
   .introContainer{
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     gap: 5vh;
   }
 
-  #AboutExEd{
-    /* flex-direction: column; */
-    gap: 5vh;
+  #AboutText{
+    flex-direction: column;
   }
 
   #projects{
     height: fit-content;
+  }
+
+  .ProjectSection{
+    min-width: 200px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .window{
+    width: 80vw;
+    font-size: x-small;
   }
 
   .ProjectsArr{
@@ -413,30 +427,34 @@ nav ul li a:hover {
     align-items: center;
   }
 
-  .ProjectSection{
-    min-width: 300px;
+  .slider {
+    animation: scroll 10s linear infinite; /* Slow and Smooth */
+  }
+  
+  .slide {
+    min-width: 100px;
+    margin: 0 5px;
+  }
+  
+  .slide img {
+    width: 5vw;
   }
 
   .ContactContainer{
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: max-content;
-    
+    font-size: small;
   }
-}
 
-@media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  } 
+  nav ul li a {
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 475px) {
+  
   .container {
     width: 100%;
   } 
 }
-
-
-
-
-

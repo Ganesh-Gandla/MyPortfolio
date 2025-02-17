@@ -10,11 +10,12 @@ function Contact() {
           <img src="./icons/email.png" alt="" width={'25px'} />
           <p>ganeshgandla19@gmail.com</p>
         </div>
-
+        <a href="https://www.linkedin.com/in/ganeshgandla/">
         <div className='ContactDetails'>
           <img src="./icons/linkedin.svg" alt="" width={'25px'} />
           <p>ganeshgandla</p>
         </div>
+        </a>
       </div>
 
 
