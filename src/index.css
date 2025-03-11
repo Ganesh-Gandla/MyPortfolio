@@ -191,8 +191,9 @@ nav ul li a:hover {
   width: 3em;
   height: 3em;
   position:absolute;
-  top: -10%;
-  left: 10%;
+  top: 105%;
+  left: 60%;
+  z-index: -1;
   filter: drop-shadow(0 0 15px rgb(126, 126, 126));
 }
 
@@ -211,9 +212,8 @@ nav ul li a:hover {
   width: 3em;
   height: 3em;
   position:absolute;
-  top: 105%;
-  left: 60%;
-  z-index: -1;
+  top: 0%;
+  left: 20%;
   filter: drop-shadow(0 0 10px rgb(77, 255, 7));
 }
 
@@ -296,6 +296,11 @@ nav ul li a:hover {
   padding-top: 2vh;
 }
 
+#AboutDesc {
+  font-size: smaller;
+  width: 80%;
+}
+
 #AboutContainer{
   font-size: small;
   width: 100%;
@@ -373,6 +378,7 @@ nav ul li a:hover {
 .ProjectSection{
   height: 50vh;
   max-height: 500px;
+  min-height: fit-content;
   min-width: 200px;
   width: 20vw;
   border: 1px solid var(--sec-color);
@@ -520,8 +526,8 @@ nav ul li a:hover {
   }
 
   .ProjectSection{
-    min-width: 200px;
-    
+    width: 25vw;
+    max-height: 400px;
   }
 
 }

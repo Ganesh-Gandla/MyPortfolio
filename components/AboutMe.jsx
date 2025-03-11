@@ -22,7 +22,7 @@ const AboutMe = () => {
                     <div id="AboutText">
 
                         <div id="introImg">
-                            <img src="./ganesh.png" alt="ganesh gandla" width={'200px'} />
+                            <img src="./ganesh.JPG" alt="ganesh gandla" width={'200px'} />
                         </div>
 
                         <div id="AboutExEd">
