@@ -27,13 +27,13 @@ const AboutMe = () => {
 
                         <div id="AboutExEd">
                             <div id="AboutExperience">
-                                <p>Experience</p>
+                                <p><b>Experience</b></p>
                                 <p>5+ years</p>
                                 <p>Content moderator</p>
                             </div>
 
                             <div id="AboutEducation">
-                                <p>Education</p>
+                                <p><b>Education</b></p>
                                 <p>B.Tech</p>
                                 <p>Mechanical Engineering</p>
                             </div>

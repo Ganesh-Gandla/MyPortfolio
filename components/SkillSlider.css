@@ -7,8 +7,6 @@
     align-items: center;
     position: relative;
     background: transparent; /* Transparent Background */
-    /* background-color: black; */
-    border: 1px solid black;
   }
   
   /* Slider Track */
@@ -63,12 +61,15 @@
   /* Left Fade Effect */
   .slider-container::before {
     left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background-color: var(--Nav-Bg-Color); */
+  
   }
   
   /* Right Fade Effect */
   .slider-container::after {
     right: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* backdrop-filter: blur(1px); */
   }
   
